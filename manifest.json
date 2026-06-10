@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "萌音本地程序通信Demo",
+  "plugin_id": "moekoe-native-host-demo",
+  "version": "1.0.0",
+  "minversion": "1.6.6",
+  "moekoe": true,
+  "description": "萌音插件本地程序托管、生命周期联动和标准输入输出通信示例插件。",
+  "author": {
+    "name": "MoeKoe Music",
+    "url": "https://music.moekoe.cn/"
+  },
+  "permissions": ["storage"],
+  "moekoe_permissions": ["moekoe:nativeHost"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "moekoe_native_hosts": [
+    {
+      "id": "echo-host",
+      "platforms": {
+        "win32": {
+          "path": "bin/moekoe-native-host-demo.exe",
+          "args": []
+        },
+        "darwin": {
+          "path": "bin/moekoe-native-host-demo",
+          "args": []
+        },
+        "linux": {
+          "path": "bin/moekoe-native-host-demo",
+          "args": []
+        }
+      },
+      "auto_start": true,
+      "bridge": "native-bridge.html"
+    }
+  ]
+}
