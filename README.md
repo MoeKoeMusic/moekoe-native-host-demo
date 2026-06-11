@@ -281,3 +281,6 @@ Native Host 能力受以下限制保护：
 - `本地程序文件不存在`：`platforms.<platform>.path` 指向的文件不存在。
 - `本地程序尚未授权`：用户还没有在插件管理页授权。
 - 收到无效 JSON 日志：本地程序 stdout 输出了非 JSON Lines 内容。
+
+
+![](./images/050331AF93DA1F21C982CEE2D78CAF0A.png)
