@@ -1,4 +1,4 @@
-# 萌音本地程序通信示例插件
+# 萌音本地程序通信示例插件 [进阶]
 
 这个插件用于演示 MoeKoe Music 插件如何通过受控的 Native Host 机制启动插件自带的本地程序，并使用标准输入/标准输出进行私有通信。
 
@@ -281,6 +281,7 @@ Native Host 能力受以下限制保护：
 - `本地程序文件不存在`：`platforms.<platform>.path` 指向的文件不存在。
 - `本地程序尚未授权`：用户还没有在插件管理页授权。
 - 收到无效 JSON 日志：本地程序 stdout 输出了非 JSON Lines 内容。
+- 开发此插件前建议先学习 [MoeKoe Music Helper（示例插件模板）](https://github.com/MoeKoeMusic/moekoe-helper)
 
 
 ![](./images/050331AF93DA1F21C982CEE2D78CAF0A.png)
